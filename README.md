@@ -8,7 +8,7 @@ I utilised the functionality of github co-pilot and the ability to transform cod
 
 ## Instructions
 
-Create a Codespace on main which will initialize the enviroment with the required packages and settings to execute the codes.
+To inititalize the environment that has the requried packages and settings, COdespaces were used to execute the codes. 
 
 The ``main.rs`` file accepts the commands via ``CLI``, the CLI are of the form:
 
@@ -19,15 +19,10 @@ Where 'XX' is the arguments for the file.
 
 if only cargo run is entered, the file displays the prompts for the inputs it requires.
 
-enter 'exit' to quit the program.
-
 To manually Build the Optimized Rust Binary, execute the following command:
 ```console
 cargo build --release
 ```
-
-This will generate the executable in the ``/main/target/release`` directory and it will be a file with the name ``main``
-
 
 ## C.R.U.D. Operations
 
