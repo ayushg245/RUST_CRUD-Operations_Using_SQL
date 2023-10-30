@@ -26,7 +26,7 @@ Below is the query ran as a command line tool.
 
 The final query updates the Glucose column where it is `140` to `3000` and prints out the databse using the command line tool as seen below.
 
-<img width="1059" alt="Screenshot 2023-10-27 at 4 49 12 PM" src="https://github.com/nogibjj/Individual_Project2_Ayush/blob/main/query3.png">
+<img width="1059" alt="Screenshot 2023-10-27 at 4 49 12 PM" src="https://github.com/nogibjj/Individual_Project2_Ayush/blob/main/query_update.png">
 
 ## Demo Video
 
