@@ -36,9 +36,11 @@
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
                 "ms-python.python",
-                "ms-python.vscode-pylance",
-                "github.copilot",
-                "ms-vscode.makefile-tools"
+				"ms-python.vscode-pylance",
+				"github.copilot",
+				"ms-vscode.makefile-tools",
+				"mechatroner.rainbow-csv",
+				"rust-lang.rust-analyzer"
             ]
         }
     },
