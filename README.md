@@ -10,6 +10,18 @@ I utilised the functionality of github co-pilot and the ability to transform cod
 
 The following below are screenshots that demonstrates that the code supports C.R.U.D operations (Create, Read, Update, Delete). All of them are SQL queries that were successfully executed. As well, I used Copilot to explain the different parts of functions that rusqlite required I used for query execution, as there wasn't a great explanation in the crate's documentation.
 
+## Using RUST
+
+Advantages of using Rust over Python:
+
+1. Performance: Rust is faster and offers fine-grained memory control.
+2. Memory Safety: Rust's ownership system ensures memory safety without a garbage collector.
+3. Concurrency: Rust supports safe concurrency and is ideal for multi-threaded applications.
+4. Predictable Performance: Rust avoids the GIL, providing more predictable performance.
+5. Systems Programming: Rust is well-suited for tasks like operating systems and embedded systems.
+6. Cross-Platform: Rust is cross-platform and works on various operating systems.
+7. Strong Typing and Concurrency Guarantees: Rust's type system and concurrency guarantees reduce runtime errors.
+
 ## Create & Read
 
 The code is able to create and read a table from the csv and create a data base for which queries can be run. 
