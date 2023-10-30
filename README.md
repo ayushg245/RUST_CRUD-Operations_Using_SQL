@@ -1,23 +1,32 @@
-## SQLite Lab
-![Architecture](https://github.com/nogibjj/Week5_MiniProject_Ayush/blob/main/Project%20Architecture.png)
-This project uses SQLite to extract, transfer, load, and dynamically query a database through a command line interface tool via python fire. The data includes Diabetes data by Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome. This command line tool allows for quick SQL queries while employing SQLite's ability to host local databases. Because of SQLite's ability to handle very large data, this project is scalable to much larger datasets.
+## Goals
+The goal of this project was to create a Rust repository that is able to create an SQLite databse, populate it with any csv document. I used a diabetes.csv found online and created a Diabetes.db for which i performed CRUD-operations. This project was created while adhering to DevOps principles, and is fully tested, linted, formatted, and built utilising Git-Hub Co-Pilot. A deeper explanation of the project, and how to run it, is explained below.
 
-## Reflection
-During this project, I found issues with the standard extract syntax handling url's which were not raw csv files. This can be an issue with common data science websites like Kaggle. I circumvented this issue by uploading the csv to github and using the github user content as the url. This will allow this code to be reproducible for anyone attempting to run it without the csv file as it pull directly from this github repository.
+## Github Co-Pilot
+I utilised the functionality of github co-pilot and the ability to transform code into different packages. The generative AI tool was able to help produce code in rust syntax with ease, Co-Pilot was also able to guide my syntax to produce code which was reproducible in Rust.
 
-This project provided initial exposure to SQL and querying. It became readily apparent that while SQL queries are very powerful, they also require specificity and a deliberate approach. This is highlighted by the below command line log of some example queries:
+## C.R.U.D. Operations
 
-![Query Executed](https://github.com/nogibjj/Week5_MiniProject_Ayush/blob/main/Query1.png)
+The following below are screenshots that demonstrates that the code supports C.R.U.D operations (Create, Read, Update, Delete). All of them are SQL queries that were successfully executed. As well, I used Copilot to explain the different parts of functions that rusqlite required I used for query execution, as there wasn't a great explanation in the crate's documentation.
 
-What we see here is that SQL allows us to very quickly gain complex insights into a database. Here we have asked for all the video games produced by Valve ranked by User Score. What I quickly found is that Valve is represented in the dataset under many variations of that company name. The complete list returned by the first query seemed to be incomplete based off my domain knowledge and so I wanted to see what was missing. The second query shows all the different titles for Valve in the publisher column. Following that up with a refined query utilizing wild cards gave me a more comprehensive list of their titles.
+## Create & Read
 
-The power of this tool is quite clear, however, the cost tradeoff is the mastery of yet another syntax like SQL. That said, this is essentially necessary for 'Big Data' and can be seemlessly integrated with python processing and visualization tools.
+The code is able to create and read a table from the csv and create a data base for which queries can be run. 
+From the image above we Select all columns from the database and produce a limit of 5 queries on the command line.
 
-During this assignment, I was assisted by github copilot. I would rate this AI tool higher than codewhisper as it has a chat function and provides recommendations in real time. It also seems to be amore user friendly service which feels more accurate than codewhisper.
+<img width="1069" alt="Screenshot 2023-10-27 at 4 41 56 PM" src="https://github.com/nogibjj/Individual_Project2_Ayush/blob/main/query1.png">
 
-Changes I would make to this project are to add more python processing of database outputs. I think this will be the future direction for this project to become more familiar with python and SQL integration.
+## Delete
 
+The Outcome variable is `1` and `0` the query deletes the values with `0` which is an indication the patient doesnt have diabetes.
+Below is the query ran as a command line tool.
 
+<img width="1082" alt="Screenshot 2023-10-27 at 4 45 24 PM" src="https://github.com/nogibjj/Individual_Project2_Ayush/blob/main/query2.png">
 
+# Update
 
+The final query updates the Glucose column where it is `140` to `3000` and prints out the databse using the command line tool as seen below.
+
+<img width="1059" alt="Screenshot 2023-10-27 at 4 49 12 PM" src="https://github.com/nogibjj/Individual_Project2_Ayush/blob/main/query3.png">
+
+## Demo Video
 
