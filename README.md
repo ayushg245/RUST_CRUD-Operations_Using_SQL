@@ -3,6 +3,8 @@
 ## Goals
 The goal of this project was to create a Rust repository that is able to create an SQLite databse, populate it with any csv document. I used a diabetes.csv found online and created a Diabetes.db for which i performed CRUD-operations. This project was created while adhering to DevOps principles, and is fully tested, linted, formatted, and built utilising Git-Hub Co-Pilot. A deeper explanation of the project, and how to run it, is explained below.
 
+<img width="1082" alt="Screenshot 2023-10-27 at 4 45 24 PM" src="https://github.com/nogibjj/Individual_Project2_Ayush/blob/main/Project2Image.png">
+
 ## Github Co-Pilot
 I utilised the functionality of github co-pilot and the ability to transform code into different packages. The generative AI tool was able to help produce code in rust syntax with ease, Co-Pilot was also able to guide my syntax to produce code which was reproducible in Rust.
 
