@@ -83,9 +83,7 @@ The final query updates the Glucose column where it is `140` to `3000` and print
    - ``lint`` : uses ``clippy`` to lint the python files
    - ``upload and Download`` : Make the Github Action Rust binary atrifact downloadable
    
-     
-   **Note** -if all the processes run successfully the following output will be visible in github actions:
-   ![Success Build](resources/Build.png)
+
    
 ### 4. Makefile
    contains the instructions and sequences for the processes used in github actions and .devcontainer for creating the virtual environment
