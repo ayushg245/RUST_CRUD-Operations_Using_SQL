@@ -65,5 +65,40 @@ The final query updates the Glucose column where it is `140` to `3000` and print
 
 <img width="1059" alt="Screenshot 2023-10-27 at 4 49 12 PM" src="https://github.com/nogibjj/Individual_Project2_Ayush/blob/main/query_update.png">
 
+## Contents
+
+### 1. Rust_Binary
+   A copy of the Optimized Rust Binary which is gerated when "cargo build --release" is executed.
+
+### 2. README.md
+   contains the information about the repository and instructions for using it
+   
+
+### 3. .github/workflows
+   github actions are used to automate the following processes whenever a change is made to the files in the repository:
+   - ``Build`` : creates the Optimized Rust Binary File
+   - ``Copy`` : copies the binary file to the root directory of the repository as ``Rust_Binary`` for easier access
+   - ``test`` : to test the main.rs file
+   - ``format`` : uses ``rustfmt`` to format the python files
+   - ``lint`` : uses ``clippy`` to lint the python files
+   - ``upload and Download`` : Make the Github Action Rust binary atrifact downloadable
+   
+     
+   **Note** -if all the processes run successfully the following output will be visible in github actions:
+   ![Success Build](resources/Build.png)
+   
+### 4. Makefile
+   contains the instructions and sequences for the processes used in github actions and .devcontainer for creating the virtual environment
+   
+### 5. .devcontainer
+   contains the ``dockerfile`` and ``devcontainer.json`` files which are used to build and define the setting of the virtual environment (codespaces - python) for running the codes.
+
+### 6. Data
+   a sample Dataset of [blood-pressure from Github](https://github.com/Opensourcefordatascience/Data-sets/blob/master/blood_pressure.csv) has been loaded into the resources folder and is used for testing.
+
+### 7. resources 
+   contains additonal files which are used in the README
+
+
 ## Demo Video
 https://youtu.be/9ivxYCZ58q4
