@@ -6,6 +6,29 @@ The goal of this project was to create a Rust repository that is able to create 
 ## Github Co-Pilot
 I utilised the functionality of github co-pilot and the ability to transform code into different packages. The generative AI tool was able to help produce code in rust syntax with ease, Co-Pilot was also able to guide my syntax to produce code which was reproducible in Rust.
 
+## Instructions
+
+Create a Codespace on main which will initialize the enviroment with the required packages and settings to execute the codes.
+
+The ``main.rs`` file accepts the commands via ``CLI``, the CLI are of the form:
+
+```console
+cargo run XX
+```
+Where 'XX' is the arguments for the file.
+
+if only cargo run is entered, the file displays the prompts for the inputs it requires.
+
+enter 'exit' to quit the program.
+
+To manually Build the Optimized Rust Binary, execute the following command:
+```console
+cargo build --release
+```
+
+This will generate the executable in the ``/main/target/release`` directory and it will be a file with the name ``main``
+
+
 ## C.R.U.D. Operations
 
 The following below are screenshots that demonstrates that the code supports C.R.U.D operations (Create, Read, Update, Delete). All of them are SQL queries that were successfully executed. As well, I used Copilot to explain the different parts of functions that rusqlite required I used for query execution, as there wasn't a great explanation in the crate's documentation.
