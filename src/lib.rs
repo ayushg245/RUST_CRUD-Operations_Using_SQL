@@ -33,7 +33,7 @@ pub fn create_table(conn: &Connection) -> Result<()> {
 }
 
 pub fn import_csv_to_sqlite(conn: &Connection) -> Result<()> {
-    let mut reader = match Reader::from_path("/workspaces/individual_project_2/src/Diabetes.csv") {
+    let mut reader = match Reader::from_path("/workspaces/Individual_Project2_Ayush/src/Diabetes.csv") {
         Ok(reader) => reader,
         Err(err) => {
             println!("Error reading file: {:?}", err);

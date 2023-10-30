@@ -3,7 +3,7 @@ use rust_sql::{create_table, import_csv_to_sqlite, querydb};
 use std::time::Instant; // Assuming your library is called "rust_sql"
 
 #[derive(Parser, Debug)]
-#[clap(name = "steam-cli", version = "0.1.0", author = "Keon Nartey")]
+#[clap(name = "steam-cli", version = "0.1.0", author = "Ayush Gupta")]
 struct Arguments {
     #[clap(short, long)]
     query: String,
